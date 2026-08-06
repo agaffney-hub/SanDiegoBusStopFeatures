@@ -11,43 +11,45 @@ layout: null
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
     font-family: Arial, sans-serif;
 }
 
+.header {
+    padding: 30px;
+    text-align: center;
+}
+
+.header h1 {
+    margin-bottom: 10px;
+}
+
 .navbar {
-    height: 50px;
-    background: #ffffff;
-    display: flex;
-    align-items: center;
-    padding: 0 25px;
-    border-bottom: 1px solid #ddd;
+    background: #333;
+    padding: 15px;
+    text-align: center;
 }
 
 .navbar a {
-    margin-right: 25px;
+    color: white;
     text-decoration: none;
-    color: #333;
-    font-size: 16px;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-.title {
-    font-weight: bold;
-    margin-right: auto;
+    margin: 0 15px;
 }
 
 .dashboard {
-    height: calc(100vh - 50px);
+    width: 100%;
+    height: 800px;
 }
 
-iframe {
+.dashboard iframe {
     width: 100%;
     height: 100%;
     border: none;
+}
+
+.about {
+    padding: 30px;
+    max-width: 1000px;
+    margin: auto;
 }
 </style>
 
@@ -55,24 +57,56 @@ iframe {
 
 <body>
 
-<div class="navbar">
-    <div class="title">
-        Transit Accessibility in San Diego County
-    </div>
+<!-- Title + short description -->
+<div class="header">
 
-    <a href="about.html">About</a>
-    <a href="data.html">Data Sources</a>
-    <a href="methodology.html">Methodology</a>
-    <a href="scoring.html">Accessibility Scoring</a>
-    <a href="sdgs.html">SDG Connections</a>
+<h1>Transit Accessibility in San Diego County</h1>
+
+<p>
+This project evaluates public transit stop accessibility by analyzing
+infrastructure features, environmental barriers, and accessibility
+conditions using GIS and street-level imagery.
+</p>
+
 </div>
 
 
+<!-- Detailed page navigation -->
+<div class="navbar">
+
+<a href="about.html">About</a>
+<a href="data.html">Data Sources</a>
+<a href="methodology.html">Methodology</a>
+<a href="scoring.html">Accessibility Scoring</a>
+<a href="sdgs.html">SDG Connections</a>
+
+</div>
+
+
+<!-- Main dashboard -->
 <div class="dashboard">
+
 <iframe 
 src="https://sdsugeo.maps.arcgis.com/apps/dashboards/7e2ee9aa83bb4a5ca4184f84a5c695c6">
 </iframe>
+
 </div>
+
+
+<!-- Short about section -->
+<div class="about">
+
+<h2>About the Project</h2>
+
+<p>
+Many people rely on public transportation for daily mobility, but barriers
+at transit stops can prevent equitable access. This project examines stop
+features across San Diego County to identify opportunities for improving
+accessibility and creating more inclusive transportation spaces.
+</p>
+
+</div>
+
 
 </body>
 </html>
