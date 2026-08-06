@@ -12,14 +12,41 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
-    width: 100%;
-    overflow: hidden;
     font-family: Arial, sans-serif;
+}
+
+.navbar {
+    height: 50px;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    padding: 0 25px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar a {
+    margin-right: 25px;
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    font-weight: bold;
+    margin-right: auto;
+}
+
+.dashboard {
+    height: calc(100vh - 50px);
 }
 
 iframe {
     width: 100%;
-    height: 100vh;
+    height: 100%;
     border: none;
 }
 </style>
@@ -28,9 +55,24 @@ iframe {
 
 <body>
 
+<div class="navbar">
+    <div class="title">
+        Transit Accessibility in San Diego County
+    </div>
+
+    <a href="about.html">About</a>
+    <a href="data.html">Data Sources</a>
+    <a href="methodology.html">Methodology</a>
+    <a href="scoring.html">Accessibility Scoring</a>
+    <a href="sdgs.html">SDG Connections</a>
+</div>
+
+
+<div class="dashboard">
 <iframe 
 src="https://sdsugeo.maps.arcgis.com/apps/dashboards/7e2ee9aa83bb4a5ca4184f84a5c695c6">
 </iframe>
+</div>
 
 </body>
 </html>
