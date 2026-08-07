@@ -67,16 +67,37 @@ body {
     padding: 2vh 3vw;
     max-width: 1000px;
     margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.about-content {
+    flex: 1;
 }
 
 .about h2 {
     font-size: clamp(1rem, 1.5vw, 1.4rem);
-    margin: 0;
+    margin: 0 0 0.4rem 0;
 }
 
 .about p {
     font-size: clamp(0.75rem, 1vw, 1rem);
     margin: 0.5vh 0;
+}
+
+.about-agencies {
+    width: 280px;
+    padding: 0.8rem 1rem;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #f8f8f8;
+    flex-shrink: 0;
+}
+
+.about-agencies h2 {
+    font-size: clamp(0.95rem, 1.2vw, 1.2rem);
 }
 </style>
 
@@ -123,6 +144,7 @@ src="https://www.arcgis.com/apps/dashboards/650f9a35971e4d6183f9f3415eb7280a">
 <!-- Short about section -->
 <div class="about">
 
+<div class="about-content">
 <h2>About the Project</h2>
 
 <p>
@@ -131,6 +153,15 @@ at transit stops can prevent equitable access. This project examines stop
 features across San Diego County to identify opportunities for improving
 accessibility and creating more inclusive transportation spaces.
 </p>
+</div>
+
+<div class="about-agencies">
+    <h2>Transit Agencies</h2>
+    <p>
+        <a href="https://www.sdmts.com/getting-around/departures-and-schedules" target="_blank">San Diego Metropolitan Transit System (MTS)</a> and
+        <a href="https://gonctd.com/" target="_blank">North County Transit District (NCTD)</a>
+    </p>
+</div>
 
 </div>
 
