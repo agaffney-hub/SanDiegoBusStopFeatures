@@ -93,13 +93,80 @@ conditions using GIS and street-level imagery.
 
 <h2>Accessibility Scoring</h2>
 
-<p>
-This is a placeholder for the scoring section. The project utilizes various datasets, including transit stop locations, infrastructure features, and environmental conditions, to assess accessibility.
-</p>
+<div>
 
-<p>
-Enjoy!
-</p>
+        <div style="margin-left: 1.5em; margin-top: 0.5em;">
+        <h3>Categories and variables:</h3>
+        <ul>
+            <li>Physical access - can someone physically reach the stop
+                <ul>
+                    <li>Distance to sidewalk</li>
+                    <li>Sidewalk nearby</li>
+                    <li>ADA curb ramp nearby</li>
+                    <li>Crosswalk nearby</li>
+                </ul>
+            </li>
+            <li>Boarding access - can someone board the public transportation
+                <ul>
+                    <li>Wheelchair boarding</li>
+                    <li>Number of routes</li>
+                    <li>Service frequency</li>
+                    <li>Stop signage</li>
+                </ul>
+            </li>
+            <li>Passenger comfort - can someone wait comfortably for public transportation
+                <ul>
+                    <li>Shelter</li>
+                    <li>Bench</li>
+                    <li>Tree canopy</li>
+                </ul>
+            </li>
+            <li>Connectivity - can a rider continue their ride to somewhere else
+                <ul>
+                    <li>Bike lane nearby</li>
+                    <li>Bike rack nearby</li>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+
+    <h3><strong>Steps to Calculate:</strong></h3>
+    <ol>
+        <li>For each variable in each category, give a score.
+            <ul>
+                <li>Scoring:
+                    <ul>
+                        <li>Binary variables - 0 = No, 1 = Yes</li>
+                        <li>Continuous variables - normalized using min-max normalization</li>
+                        <li>Normalized Value = (x - min(x)) / (max(x) - min(x))</li>
+                    </ul>
+                </li>
+            </ul>
+        </li>
+        <br></br>
+        <li>Add up the scores for each variable and divide by the number of variables in the category.</li>
+        <br></br>
+        <li>Multiply each category by its weight (0.40, 0.25, etc.) to get the weighted accessibility index.
+            <ul>
+                <li>Weights:
+                    <ul>
+                        <li>(35%) Physical access</li>
+                        <li>(30%) Boarding access</li>
+                        <li>(20%) Passenger comfort</li>
+                        <li>(15%) Connectivity</li>
+                    </ul>
+                </li>
+                <li>Weighting helps to indicate that a stop with a bench is still usable, but a stop without a sidewalk might not be.</li>
+            </ul>
+        </li>
+        <br></br>
+        <li>Calculate accessibility score by using accessibility score = 1 + (weighted index * 9). This means that if the index is 0, the accessibility score would be 1; if the index is 1, then the accessibility score would be 10.
+            <ul>
+                <li>Using this formula prevents having an accessibility score of 0, which could be difficult for users to interpret.</li>
+            </ul>
+        </li>
+    </ol>
 
 </div>
 
