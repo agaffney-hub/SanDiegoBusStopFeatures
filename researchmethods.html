@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>About | Transit Accessibility in San Diego County</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Top title section */
+.header {
+    padding: 1.5vh 3vw;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: clamp(1.2rem, 2vw, 2rem);
+    margin: 0 0 0.5vh 0;
+}
+
+.header p {
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    margin: 0;
+}
+
+/* Navigation */
+.navbar {
+    background: #333;
+    padding: 1vh;
+    text-align: center;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+    margin: 0 1vw;
+    font-size: clamp(0.75rem, 1vw, 1rem);
+}
+
+/* Page content */
+.content {
+    padding: 3vh 5vw;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.content h2 {
+    font-size: clamp(1.2rem, 2vw, 1.8rem);
+}
+
+.content p {
+    font-size: clamp(0.9rem, 1vw, 1.1rem);
+    line-height: 1.6;
+}
+</style>
+
+</head>
+
+<body>
+
+<!-- Same header -->
+<div class="header">
+
+<h1>Transit Accessibility in San Diego County</h1>
+
+<p>
+This project evaluates public transit stop accessibility by analyzing
+infrastructure features, environmental barriers, and accessibility
+conditions using GIS and street-level imagery.
+</p>
+
+</div>
+
+
+<!-- Same navigation -->
+<div class="navbar">
+
+<a href="index.html">Dashboard</a>
+<a href="about.html">About</a>
+<a href="data.html">Data Sources</a>
+<a href="researchmethods.html">Research Methods</a>
+<a href="team.html">Team</a>
+<a href="sdgs.html">SDG Connections</a>
+
+</div>
+
+
+<!-- About page content -->
+<div class="content">
+
+<h2>Research Methods & Accessibility Scoring</h2>
+
+<p>
+To assess the accessibility of public transportation stops in San Diego County, we used a mixed-methods approach that combined community input with spatial analysis. This allowed us to ground the project in lived experience while also quantifying accessibility across the county.
+</p>
+
+<h3>Community engagement and ethnographic insights</h3>
+
+<p>
+One of our group members was able to attend a quarterly advisory, safety, and wellness meeting through a nonprofit that supports adults with intellectual and developmental disabilities. The meeting included participants supported by the organization as well as staff members. The discussion highlighted several barriers that affect access to public transportation, including:
+</p>
+
+<ul>
+    <li>no sidewalk when getting off the bus</li>
+    <li>large gaps between the curb and the bus</li>
+    <li>limited stop availability</li>
+    <li>limited operating hours</li>
+</ul>
+
+<p>
+Participants also identified features that make a stop feel accessible, such as shade cover, clear signage, benches, and flat ground when boarding. When asked what they would change first, respondents emphasized cleanliness and more public bathrooms. These conversations reinforced an important point: accessibility looks different for everyone, and small barriers can significantly affect whether transportation feels usable and safe.
+</p>
+
+<h3>Variable selection and scoring</h3>
+
+<p>
+We used the community feedback to define a practical accessibility framework. We selected nine scoring variables: sidewalk nearby, crosswalk nearby, curb ramp nearby, wheelchair boarding score, transfer stop score, bench, shelter, bike lane, and bike rack. Most variables measured the proximity or presence of a feature near the stop, and each was assigned a weight based on its importance to safe and usable access.
+</p>
+
+<p>
+The accessibility score was calculated using the formula:</p>
+<p><strong>Accessibility Score = 1 + 9(Weighted Proportion)</strong></p>
+
+<p>
+This formula ensures that accessibility scores fall between 1 and 10, avoiding a score of zero that could be confusing for users. We weighted variables more heavily when a feature was essential for safe use. For example, sidewalk access received a higher weight than bench presence, because a stop can still be difficult or unsafe to use without a sidewalk even if a bench is present.
+</p>
+
+<h3>Spatial data and GIS analysis</h3>
+
+<p>
+To compile these variables, we used publicly available data from the City of San Diego Open Data Portal, SanGIS transit stop locations, GTFS data from MTS and NCTD, SANDAG sidewalk layers, OpenStreetMap data, and bike route information. We then created a Python script to calculate final accessibility scores for each transit stop across San Diego County and to generate a data confidence score based on how complete the stop data was.
+</p>
+
+<p>
+In addition, we used the latitude and longitude coordinates from the dataset to generate Google Street View links, allowing the final dashboard to connect the accessibility score to the real-world conditions at each stop.
+</p>
+
+<p>
+This research design combines community-informed variables with a countywide spatial analysis so that the project reflects both lived experience and measurable transit conditions.
+</p>
+
+</div>
+
+
+</body>
+</html>
