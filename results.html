@@ -3,226 +3,37 @@
 <head>
 <title>Results & Findings | Transit Accessibility in San Diego County</title>
 
-<style>
-html, body {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, sans-serif;
-    color: #222;
-    background: #fff;
-}
-
-.header {
-    padding: 2vh 3vw 1.5vh;
-    text-align: center;
-}
-
-.header h1 {
-    margin: 0 0 0.5rem;
-    font-size: clamp(2rem, 4vw, 3rem);
-}
-
-.header p {
-    margin: 0;
-    color: #555;
-    font-size: clamp(1rem, 1.5vw, 1.2rem);
-}
-
-.navbar {
-    background: #333;
-    padding: 1vh;
-    text-align: center;
-}
-
-.navbar a {
-    color: #fff;
-    text-decoration: none;
-    margin: 0 1vw;
-    font-size: 0.95rem;
-}
-
-.navbar a:hover {
-    text-decoration: underline;
-}
-
-.content {
-    max-width: 1150px;
-    margin: auto;
-    padding: 3vh 5vw 5vh;
-}
-
-h2 {
-    margin-top: 2rem;
-    margin-bottom: 0.6rem;
-}
-
-h3 {
-    margin-top: 1rem;
-}
-
-p {
-    line-height: 1.6;
-}
-
-.main-result {
-    background: #004a99;
-    color: white;
-    border-radius: 10px;
-    padding: 1.8rem;
-    margin: 1.5rem 0;
-    text-align: center;
-}
-
-.main-result .score {
-    font-size: clamp(3rem, 7vw, 5rem);
-    font-weight: bold;
-    line-height: 1;
-}
-
-.main-result h2 {
-    margin: 0.5rem 0;
-}
-
-.main-result p {
-    margin: 0 auto;
-    max-width: 700px;
-}
-
-.key-findings {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1rem;
-    margin: 1.5rem 0 2rem;
-}
-
-.finding {
-    background: #f3f6f8;
-    border-radius: 8px;
-    padding: 1.2rem;
-    text-align: center;
-    border-top: 5px solid #004a99;
-}
-
-.finding-number {
-    font-size: 2rem;
-    font-weight: bold;
-    color: #004a99;
-}
-
-.finding-title {
-    font-weight: bold;
-    margin: 0.4rem 0;
-}
-
-.finding-text {
-    color: #555;
-    font-size: 0.95rem;
-    line-height: 1.4;
-}
-
-.figure {
-    margin: 1.5rem 0;
-}
-
-.figure img {
-    width: 100%;
-    height: auto;
-    border-radius: 8px;
-    display: block;
-}
-
-.caption {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 0.5rem;
-}
-
-.insights {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 1rem;
-}
-
-.insight {
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    padding: 1rem;
-}
-
-.insight h3 {
-    color: #004a99;
-    margin-top: 0;
-}
-
-.insight p {
-    margin-bottom: 0;
-}
-
-
-.interpretation {
-    background: #f5f5f5;
-    border-left: 5px solid #004a99;
-    padding: 1rem 1.2rem;
-    margin: 1.5rem 0;
-}
-
-
-.cta {
-    background: #004a99;
-    color: white;
-    padding: 1.5rem;
-    border-radius: 8px;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-.cta a {
-    color: white;
-    text-decoration: underline;
-}
-
-.report {
-    margin-top: 1.5rem;
-}
-
-.report li {
-    margin-bottom: 0.6rem;
-}
-
-@media (max-width: 800px) {
-    .key-findings,
-    .insights,
-    .sdgs {
-        grid-template-columns: 1fr;
-        flex-direction: column;
-    }
-
-    .navbar a {
-        display: inline-block;
-        margin: 0.4rem 0.7rem;
-    }
-}
-</style>
+<link rel="stylesheet" href="assets/styles.css">
 
 </head>
 
 <body>
 
 <div class="header">
-    <h1>Results & Findings</h1>
-    <p>
-        What our countywide accessibility analysis reveals about San Diego's transit stops.
-    </p>
+    <div class="logos">
+        <img src="assets/logos/SDSU_Logo.jpg" alt="SDSU logo" onerror="this.onerror=null;this.src='https://via.placeholder.com/56x56?text=SDSU'" />
+
+        <div class="title">
+            <h1>Transit Accessibility in San Diego County</h1>
+            <p>This project evaluates public transit stop accessibility by analyzing infrastructure features, environmental barriers, and accessibility conditions using GIS and street-level imagery.</p>
+        </div>
+
+        <img src="assets/logos/MOC_Logo.png" alt="Metabolism of Cities logo" onerror="this.onerror=null;this.src='https://via.placeholder.com/56x56?text=MOC'" />
+    </div>
+
 </div>
 
 <div class="navbar">
-    <a href="index.html">Dashboard</a>
-    <a href="about.html">About</a>
-    <a href="data.html">Data Sources</a>
-    <a href="researchmethods.html">Research Methods</a>
-    <a href="results.html">Results</a>
-    <a href="team.html">Team</a>
-    <a href="sdgs.html">SDG Connections</a>
+    <div class="nav-links">
+        <a href="index.html">Dashboard</a>
+        <a href="about.html">About</a>
+        <a href="data.html">Data Sources</a>
+        <a href="researchmethods.html">Research Methods</a>
+        <a href="results.html">Results</a>
+        <a href="team.html">Team</a>
+        <a href="sdgs.html">SDG Connections</a>
+    </div>
+
 </div>
 
 <div class="content">
@@ -326,7 +137,7 @@ p {
     </div>
 
 
-    <!-- INTERPRETATION -->
+    
 
     <div class="interpretation">
 
@@ -342,9 +153,7 @@ p {
 
     </div>
 
-
-    </div>
-
+    </div> <!-- end .content -->
 
     <div class="cta">
 
@@ -366,30 +175,11 @@ p {
         <h3>Have a transit accessibility issue?</h3>
 
         <ul>
-        </div>
-
-        <a
-            href="https://www.sdmts.com/contact/customer-feedback"
-            target="_blank"
-            rel="noopener"
-    >
-         MTS – Customer Feedback
-        </a>
-
-        <a
-            href="https://customerservicenctd.powerappsportals.com/complaint-create/"
-            target="_blank"
-            rel="noopener"
-    >
-            NCTD – Report / Complaint
-    </a>
-
-    </div>
-
+            <li><a href="https://www.sdmts.com/contact/customer-feedback" target="_blank" rel="noopener">MTS – Customer Feedback</a></li>
+            <li><a href="https://customerservicenctd.powerappsportals.com/complaint-create/" target="_blank" rel="noopener">NCTD – Report / Complaint</a></li>
         </ul>
 
     </div>
-
 
     <p>
         Learn how the score was calculated on the
@@ -398,7 +188,6 @@ p {
         <a href="data.html">Data Sources</a> page.
     </p>
 
-</div>
 
 </body>
 </html>
