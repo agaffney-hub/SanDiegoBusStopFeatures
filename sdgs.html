@@ -1,31 +1,83 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>About | Transit Accessibility in San Diego County</title>
+    <title>SDG Connections | Transit Accessibility in San Diego County</title>
+
     <link rel="stylesheet" href="assets/styles.css">
 
+    <style>
+        .sdg-overview {
+            background: #f5f5f5;
+            border-left: 5px solid #004a99;
+            padding: 1.5rem 1.8rem;
+            margin-top: 2rem;
+            border-radius: 8px;
+        }
 
+        .sdg-overview h2 {
+            margin-top: 0;
+        }
+
+        .sdg-overview p {
+            margin-bottom: 1rem;
+        }
+
+        .sdg-overview p:last-child {
+            margin-bottom: 0;
+        }
+
+        .sdg-link {
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+
+        .sdg-link a {
+            display: inline-block;
+            background: #004a99;
+            color: white;
+            padding: 0.7rem 1.2rem;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        .sdg-link a:hover {
+            background: #00366f;
+            text-decoration: none;
+        }
+    </style>
 
 </head>
 
 <body>
 
 <div class="header">
+
     <div class="logos">
-        <img src="assets/logos/SDSU_Logo.jpg" alt="SDSU logo" onerror="this.onerror=null;this.src='https://via.placeholder.com/56x56?text=SDSU'" />
+
+        <img src="assets/logos/SDSU_Logo.jpg"
+             alt="SDSU logo"
+             onerror="this.onerror=null;this.src='https://via.placeholder.com/56x56?text=SDSU'" />
 
         <div class="title">
             <h1>Transit Accessibility in San Diego County</h1>
-            <p>This project evaluates public transit stop accessibility by analyzing infrastructure features, environmental barriers, and accessibility conditions using GIS and street-level imagery.</p>
+
+            <p>
+                This project evaluates public transit stop accessibility by
+                analyzing infrastructure features, environmental barriers,
+                and accessibility conditions using GIS and street-level imagery.
+            </p>
         </div>
 
-        <img src="assets/logos/MOC_Logo.png" alt="Metabolism of Cities logo" onerror="this.onerror=null;this.src='https://via.placeholder.com/56x56?text=MOC'" />
+        <img src="assets/logos/MOC_Logo.png"
+             alt="Metabolism of Cities logo"
+             onerror="this.onerror=null;this.src='https://via.placeholder.com/56x56?text=MOC'" />
+
     </div>
 
 </div>
 
-
 <div class="navbar">
+
     <div class="nav-links">
         <a href="index.html">Dashboard</a>
         <a href="about.html">About</a>
@@ -38,36 +90,136 @@
 
 </div>
 
-
 <div class="content">
 
-<h2>SDG Connections</h2>
+    <h2>SDG Connections</h2>
 
-<p>
-This project aligns with Sustainable Development Goals (SDGs):
-</p>
+    <p>
+        This project aligns with three Sustainable Development Goals (SDGs):
+    </p>
 
-<div class="key-findings" style="margin-bottom:1rem">
-    <div class="finding">
-        <div class="finding-number">SDG 3</div>
-        <div class="finding-title">Good Health</div>
-        <div class="finding-text">Improving transit access supports access to healthcare and well-being.</div>
+    <div class="key-findings" style="margin-bottom:1rem;">
+
+        <div class="finding">
+
+            <div class="finding-number">
+                <a href="https://sdgs.un.org/goals/goal3"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    SDG 3
+                </a>
+            </div>
+
+            <div class="finding-title">
+                <a href="https://sdgs.un.org/goals/goal3"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Good Health
+                </a>
+            </div>
+
+            <div class="finding-text">
+                Improving transit access supports access to healthcare
+                and well-being.
+            </div>
+
+        </div>
+
+        <div class="finding">
+
+            <div class="finding-number">
+                <a href="https://sdgs.un.org/goals/goal10"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    SDG 10
+                </a>
+            </div>
+
+            <div class="finding-title">
+                <a href="https://sdgs.un.org/goals/goal10"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Reduced Inequalities
+                </a>
+            </div>
+
+            <div class="finding-text">
+                Accessible transit reduces mobility disparities
+                across populations.
+            </div>
+
+        </div>
+
+        <div class="finding">
+
+            <div class="finding-number">
+                <a href="https://sdgs.un.org/goals/goal11"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    SDG 11
+                </a>
+            </div>
+
+            <div class="finding-title">
+                <a href="https://sdgs.un.org/goals/goal11"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Sustainable Cities
+                </a>
+            </div>
+
+            <div class="finding-text">
+                Better transit stops contribute to inclusive,
+                sustainable urban spaces.
+            </div>
+
+        </div>
+
     </div>
-    <div class="finding">
-        <div class="finding-number">SDG 10</div>
-        <div class="finding-title">Reduced Inequalities</div>
-        <div class="finding-text">Accessible transit reduces mobility disparities across populations.</div>
+
+    <div class="sdg-overview">
+
+        <h2>What Are the Sustainable Development Goals?</h2>
+
+        <p>
+            The Sustainable Development Goals (SDGs) are a collection of
+            17 global goals established by the United Nations to address
+            major social, economic, and environmental challenges around
+            the world. Together, they provide a shared framework for
+            improving quality of life while supporting more equitable
+            and sustainable communities.
+        </p>
+
+        <p>
+            The goals recognize that issues such as health, inequality,
+            transportation, housing, environmental sustainability, and
+            economic opportunity are interconnected. Progress toward one
+            goal can therefore contribute to progress in others.
+        </p>
+
+        <p>
+            This project contributes to that broader framework by examining
+            accessibility within public transportation. Understanding the
+            physical conditions of transit stops can help identify barriers
+            that may affect people's ability to safely and reliably access
+            transportation and the opportunities connected to it.
+        </p>
+
+        <div class="sdg-link">
+
+            <a href="https://sdgs.un.org/goals"
+               target="_blank"
+               rel="noopener noreferrer">
+                Explore All 17 UN Sustainable Development Goals
+            </a>
+
+        </div>
+
     </div>
-    <div class="finding">
-        <div class="finding-number">SDG 11</div>
-        <div class="finding-title">Sustainable Cities</div>
-        <div class="finding-text">Better transit stops contribute to inclusive, sustainable urban spaces.</div>
-    </div>
+
 </div>
-
-
-</div>
-
 
 </body>
+
 </html>
+```
