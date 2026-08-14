@@ -1,0 +1,62 @@
+/* Shared site styles (from results.html) */
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+.header {
+    padding: 2vh 3vw 1.5vh;
+    text-align: center;
+}
+
+.header h1 { margin: 0 0 0.5rem; font-size: clamp(2rem, 4vw, 3rem); }
+.header p { margin: 0; color: #555; font-size: clamp(1rem, 1.5vw, 1.2rem); }
+
+.navbar { background: #333; padding: 1vh; text-align: center; }
+.navbar a { color: #fff; text-decoration: none; margin: 0 1vw; font-size: 0.95rem; }
+.navbar a:hover { text-decoration: underline; }
+
+.content { max-width: 1150px; margin: auto; padding: 3vh 5vw 5vh; }
+
+h2 { margin-top: 2rem; margin-bottom: 0.6rem; }
+h3 { margin-top: 1rem; }
+p { line-height: 1.6; }
+
+.main-result { background: #004a99; color: white; border-radius: 10px; padding: 1.8rem; margin: 1.5rem 0; text-align: center; }
+.main-result .score { font-size: clamp(3rem, 7vw, 5rem); font-weight: bold; line-height: 1; }
+.main-result h2 { margin: 0.5rem 0; }
+.main-result p { margin: 0 auto; max-width: 700px; }
+
+.key-findings { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1rem; margin: 1.5rem 0 2rem; }
+.finding { background: #f3f6f8; border-radius: 8px; padding: 1.2rem; text-align: center; border-top: 5px solid #004a99; }
+.finding-number { font-size: 2rem; font-weight: bold; color: #004a99; }
+.finding-title { font-weight: bold; margin: 0.4rem 0; }
+.finding-text { color: #555; font-size: 0.95rem; line-height: 1.4; }
+
+.figure { margin: 1.5rem 0; }
+.figure img { width: 100%; height: auto; border-radius: 8px; display: block; }
+.caption { font-size: 0.9rem; color: #666; margin-top: 0.5rem; }
+
+.insights { display: grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+.insight { border: 1px solid #ddd; border-radius: 8px; padding: 1rem; }
+.insight h3 { color: #004a99; margin-top: 0; }
+.insight p { margin-bottom: 0; }
+
+.interpretation { background: #f5f5f5; border-left: 5px solid #004a99; padding: 1rem 1.2rem; margin: 1.5rem 0; }
+
+.cta { background: #004a99; color: white; padding: 1.5rem; border-radius: 8px; text-align: center; margin-top: 2rem; }
+.cta a { color: white; text-decoration: underline; }
+
+.report { margin-top: 1.5rem; }
+.report li { margin-bottom: 0.6rem; }
+
+@media (max-width: 800px) {
+    .key-findings, .insights, .sdgs { grid-template-columns: 1fr; flex-direction: column; }
+    .navbar a { display: inline-block; margin: 0.4rem 0.7rem; }
+}
+
+/* Small utility */
+.muted { color: #666; font-size: 0.95rem }

@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Results & Findings | Transit Accessibility in San Diego County</title>
+
+<style>
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #222;
+    background: #fff;
+}
+
+.header {
+    padding: 2vh 3vw 1.5vh;
+    text-align: center;
+}
+
+.header h1 {
+    margin: 0 0 0.5rem;
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.header p {
+    margin: 0;
+    color: #555;
+    font-size: clamp(1rem, 1.5vw, 1.2rem);
+}
+
+.navbar {
+    background: #333;
+    padding: 1vh;
+    text-align: center;
+}
+
+.navbar a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1vw;
+    font-size: 0.95rem;
+}
+
+.navbar a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    max-width: 1150px;
+    margin: auto;
+    padding: 3vh 5vw 5vh;
+}
+
+h2 {
+    margin-top: 2rem;
+    margin-bottom: 0.6rem;
+}
+
+h3 {
+    margin-top: 1rem;
+}
+
+p {
+    line-height: 1.6;
+}
+
+.main-result {
+    background: #004a99;
+    color: white;
+    border-radius: 10px;
+    padding: 1.8rem;
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.main-result .score {
+    font-size: clamp(3rem, 7vw, 5rem);
+    font-weight: bold;
+    line-height: 1;
+}
+
+.main-result h2 {
+    margin: 0.5rem 0;
+}
+
+.main-result p {
+    margin: 0 auto;
+    max-width: 700px;
+}
+
+.key-findings {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+    margin: 1.5rem 0 2rem;
+}
+
+.finding {
+    background: #f3f6f8;
+    border-radius: 8px;
+    padding: 1.2rem;
+    text-align: center;
+    border-top: 5px solid #004a99;
+}
+
+.finding-number {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #004a99;
+}
+
+.finding-title {
+    font-weight: bold;
+    margin: 0.4rem 0;
+}
+
+.finding-text {
+    color: #555;
+    font-size: 0.95rem;
+    line-height: 1.4;
+}
+
+.figure {
+    margin: 1.5rem 0;
+}
+
+.figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    display: block;
+}
+
+.caption {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.5rem;
+}
+
+.insights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+}
+
+.insight {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1rem;
+}
+
+.insight h3 {
+    color: #004a99;
+    margin-top: 0;
+}
+
+.insight p {
+    margin-bottom: 0;
+}
+
+
+.interpretation {
+    background: #f5f5f5;
+    border-left: 5px solid #004a99;
+    padding: 1rem 1.2rem;
+    margin: 1.5rem 0;
+}
+
+
+.cta {
+    background: #004a99;
+    color: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+.cta a {
+    color: white;
+    text-decoration: underline;
+}
+
+.report {
+    margin-top: 1.5rem;
+}
+
+.report li {
+    margin-bottom: 0.6rem;
+}
+
+@media (max-width: 800px) {
+    .key-findings,
+    .insights,
+    .sdgs {
+        grid-template-columns: 1fr;
+        flex-direction: column;
+    }
+
+    .navbar a {
+        display: inline-block;
+        margin: 0.4rem 0.7rem;
+    }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="header">
+    <h1>Results & Findings</h1>
+    <p>
+        What our countywide accessibility analysis reveals about San Diego's transit stops.
+    </p>
+</div>
+
+<div class="navbar">
+    <a href="index.html">Dashboard</a>
+    <a href="about.html">About</a>
+    <a href="data.html">Data Sources</a>
+    <a href="researchmethods.html">Research Methods</a>
+    <a href="results.html">Results</a>
+    <a href="team.html">Team</a>
+    <a href="sdgs.html">SDG Connections</a>
+</div>
+
+<div class="content">
+
+    <div class="main-result">
+        <div class="score">4.6 / 10</div>
+        <h2>Average Transit Stop Accessibility</h2>
+        <p>
+            More than 6,000 transit stops were evaluated across San Diego County
+            using a standardized accessibility index.
+        </p>
+    </div>
+
+
+    <h2>Key Findings</h2>
+
+    <div class="key-findings">
+
+        <div class="finding">
+            <div class="finding-number">6,000+</div>
+            <div class="finding-title">Stops Assessed</div>
+            <div class="finding-text">
+                Transit stops across San Diego County were evaluated.
+            </div>
+        </div>
+
+        <div class="finding">
+            <div class="finding-number">Highest</div>
+            <div class="finding-title">West County</div>
+            <div class="finding-text">
+                West County had the highest average accessibility score.
+            </div>
+        </div>
+
+        <div class="finding">
+            <div class="finding-number">Lowest</div>
+            <div class="finding-title">North County</div>
+            <div class="finding-text">
+                North County had the lowest average score, excluding "Other."
+            </div>
+        </div>
+
+    </div>
+
+
+    <h2>Countywide Accessibility</h2>
+
+    <p>
+        Accessibility varies across individual transit stops. The interactive
+        dashboard allows users to explore stop-level scores and identify areas
+        for further investigation.
+    </p>
+
+<div class="figure">
+    <iframe
+        src="https://www.arcgis.com/apps/dashboards/ce8ada9ba6204b2cb8106dff55d1b30c"
+        width="100%"
+        height="600"
+        frameborder="0"
+        allowfullscreen>
+    </iframe>
+
+    <p class="caption">
+        Interactive accessibility dashboard showing transit stop scores across San Diego County.
+    </p>
+</div>
+
+    <h2>Regional & City Patterns</h2>
+
+    <div class="figure">
+        <img
+            src="assets/results/chart_avg_by_region.png"
+            alt="Average accessibility score by city"
+            onerror="this.style.opacity=0.6;this.alt='Add assets/results/chart_avg_by_region.png'"
+        />
+
+        <p class="caption">
+            Average accessibility scores by geographic area/city.
+        </p>
+    </div>
+
+    <div class="insights">
+
+        <div class="insight">
+            <h3>South Bay was not the lowest</h3>
+            <p>
+                Our initial expectation that the South Bay, including Chula Vista,
+                would have particularly low accessibility was not supported.
+                Chula Vista ranked sixth in the city-level comparison.
+            </p>
+        </div>
+
+        <div class="insight">
+            <h3>Accessibility varies by location</h3>
+            <p>
+                Differences between regions and cities show why countywide averages
+                alone are not enough to identify where improvements may be needed.
+            </p>
+        </div>
+
+    </div>
+
+
+    <!-- INTERPRETATION -->
+
+    <div class="interpretation">
+
+        <strong>What do the results mean?</strong>
+
+        <p>
+            The analysis provides a baseline for understanding transit-stop
+            accessibility across San Diego County. Rather than treating every
+            stop equally, the accessibility index helps identify individual
+            locations and areas that may warrant additional investigation
+            or infrastructure investment.
+        </p>
+
+    </div>
+
+
+    </div>
+
+
+    <div class="cta">
+
+        <strong>Help improve transit accessibility.</strong>
+
+        <p>
+            If you experience an accessibility barrier at a transit stop,
+            report it to the appropriate transit agency. Community feedback
+            can help identify issues that may not be captured by GIS data alone.
+        </p>
+
+        <a href="#report">Find local reporting resources ↓</a>
+
+    </div>
+
+
+    <div class="report" id="report">
+
+        <h3>Have a transit accessibility issue?</h3>
+
+        <ul>
+        </div>
+
+        <a
+            href="https://www.sdmts.com/contact/customer-feedback"
+            target="_blank"
+            rel="noopener"
+    >
+         MTS – Customer Feedback
+        </a>
+
+        <a
+            href="https://customerservicenctd.powerappsportals.com/complaint-create/"
+            target="_blank"
+            rel="noopener"
+    >
+            NCTD – Report / Complaint
+    </a>
+
+    </div>
+
+        </ul>
+
+    </div>
+
+
+    <p>
+        Learn how the score was calculated on the
+        <a href="researchmethods.html">Research Methods</a> page,
+        or explore the datasets on the
+        <a href="data.html">Data Sources</a> page.
+    </p>
+
+</div>
+
+</body>
+</html>
