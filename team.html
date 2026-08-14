@@ -24,6 +24,9 @@ html, body {
 .team-grid { display:flex; gap:2rem; flex-wrap:wrap; }
 .member { flex: 1 1 220px; }
 .member img{ width:220px; height:220px; object-fit:cover; border-radius:8px; }
+.team-grid { margin-bottom: 1rem; }
+.acknowledgements { width: 100%; margin-top: 1.5rem; }
+</style>
 </style>
 
 </head>
@@ -55,23 +58,26 @@ html, body {
 
 <div class="team-grid">
     <div class="member">
-        <img src="assets/headshots/amy.jpeg" alt="Amy Gaffney headshot" />
+        <img src="assets/headshots/amy.png" alt="Amy Gaffney headshot" onerror="this.onerror=null;this.src='https://via.placeholder.com/220x220?text=Amy'" />
         <h3>Amy Gaffney</h3>
         <p>Master of Science in Big Data Analytics student. Loves coffee and music, with a particular fondness for clean map design and thoughtful visuals.</p>
     </div>
 
     <div class="member">
-        <img src="assets/headshots/devon.jpeg" alt="Devon Romero headshot" />
+        <img src="assets/headshots/devon.png" alt="Devon Romero headshot" onerror="this.onerror=null;this.src='https://via.placeholder.com/220x220?text=Devon'" />
         <h3>Devon Romero</h3>
         <p>Master of Science in Big Data Analytics student. Loves traveling and exploring new places, especially when it involves spatial data and local transit systems.</p>
     </div>
 
     <div class="member">
-        <img src="assets/headshots/sebastian.jpeg" alt="Sebastian Falcon headshot" />
+        <img src="assets/headshots/sebastian.png" alt="Sebastian Falcon headshot" onerror="this.onerror=null;this.src='https://via.placeholder.com/220x220?text=Sebastian'" />
         <h3>Sebastian Falcon</h3>
         <p>Master of Science in Big Data Analytics student. Passionate about family life and enjoys time with his dachshunds; interested in urban policy and community-oriented solutions.</p>
     </div>
 
+</div>
+
+<div class="acknowledgements">
 <h2>Acknowledgements</h2>
 <p>We thank the instructors, mentors, and community partners who supported this project and helped us better understand rider experiences across San Diego County.</p>
 <ul>
@@ -83,6 +89,7 @@ html, body {
     <li><a href="https://data.sandiego.gov/" target="_blank" rel="noopener">City of San Diego Open Data Portal</a></li>
     <li><a href="https://geo.sandag.org/portal/home/item.html?id=6ab86a90327d4592b259d7f1c453d092" target="_blank" rel="noopener">SANDAG GIS</a></li>
 </ul>
+</div>
 
 </div>
 
