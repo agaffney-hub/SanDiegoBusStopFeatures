@@ -38,7 +38,6 @@ a:visited {
     font-size: clamp(0.95rem, 1.2vw, 1.1rem);
 }
 
-
 .header .logos {
     display: grid;
     grid-template-columns: 1fr minmax(320px, 720px) 1fr;
@@ -48,9 +47,9 @@ a:visited {
 }
 
 .header .logos img {
-    height: 40px;
+    height: clamp(55px, 6vw, 100px);
     width: auto;
-    max-width: 180px;
+    max-width: 240px;
     object-fit: contain;
     display: block;
 }
